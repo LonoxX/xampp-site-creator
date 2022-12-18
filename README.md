@@ -35,3 +35,8 @@ DirectoryIndex index.html index.php
 ```js
 127.0.0.1 newsite.local
 ```
+
+#### Support
+
+> Webseite: [Panda-Network.de](https://panda-network.de) \
+> Support [Discord-Server](https://pnnet.dev/discord)
