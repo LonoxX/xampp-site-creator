@@ -18,7 +18,11 @@ Dieses Skript ermöglicht es Ihnen, eine neue Website in XAMPP zu erstellen, ind
 ## Hinweise
 
 - Das Skript geht davon aus, dass XAMPP in `G:/xampp` installiert ist. Wenn Sie XAMPP an einem anderen Ort installiert haben, müssen Sie die Variable `XAMPP_Home` am Anfang des Skripts aktualisieren.
-- Das Skript erstellt eine `index.html`-Datei im Site-Verzeichnis mit einer grundlegenden Struktur und einer Willkommensnachricht. Sie können diese Datei nach Bedarf
+- Das Skript erstellt eine `index.html`-Datei im Site-Verzeichnis mit einer grundlegenden Struktur und einer Willkommensnachricht. Sie können diese Datei nach Bedarf anpassen.
+- Das Skript fügt den virtuellen Host-Eintrag am Ende der httpd.conf-Datei hinzu. Wenn Sie andere virtuellen Host-Einträge in der Datei haben, wird der neue Eintrag am Ende angefügt.
+- Das Skript fügt den Site-Namen in die hosts-Datei mit der localhost-IP-Adresse (`127.0.0.1`) hinzu. Dadurch können Sie die Site aufrufen, indem Sie den Site-Namen in die Adressleiste des Browsers eingeben.
+
+## Beispiel
 
 ```js
 <VirtualHost *:80>
